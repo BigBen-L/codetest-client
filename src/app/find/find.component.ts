@@ -1,8 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroService } from '../common/services/hero.service';
-import Hero from '../../../../server/src/models/hero';
 import { ActivatedRoute } from '@angular/router';
 
+
+class Hero {
+
+  id: string;
+ 
+  name: string;
+ 
+  photo: string;
+
+  bio: string;
+
+}
 @Component({
   selector: 'app-find',
   templateUrl: './find.component.html',

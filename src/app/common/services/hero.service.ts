@@ -5,7 +5,18 @@ import {
 } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
-import Hero from '../../../../../server/src/models/hero';
+
+class Hero {
+
+  id: string;
+ 
+  name: string;
+ 
+  photo: string;
+
+  bio: string;
+
+}
 
 const httpOptions = {
   headers: new HttpHeaders({
