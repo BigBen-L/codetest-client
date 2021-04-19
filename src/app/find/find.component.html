@@ -1,0 +1,16 @@
+<div class="hero-page">
+  <div class="hero-intro">
+    <div class="hero-container">
+      <img src="{{ hero.photo }}" alt="{{ hero.name + 'photo' }}">
+      <div>
+        <p>{{ hero.name }}</p>
+        <a routerLink="/heroes"> <button>Back to heroes</button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-container hero-bio">
+    <h2>Bio</h2>
+    <p>{{ hero.bio }}</p>
+  </div>
+</div>
