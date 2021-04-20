@@ -48,6 +48,17 @@ $hero-red: #bc0808;
   }
 }
 
+.killer {
+  margin-top: 40px;
+  text-align: center;
+  vertical-align: middle;
+  .killer__name {
+    margin-right: 20px;
+  }
+  .btn {
+    margin-bottom: 5px;
+  }
+}
 @media (max-width: 1200px) {
   .heroes {
     grid-template-columns: repeat(5,  1fr);

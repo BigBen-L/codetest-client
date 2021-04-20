@@ -19,12 +19,25 @@ class Hero {
 export class ListComponent implements OnInit {
   heroes: Hero[];
 
+  public heroName: any = {
+    name: ''
+  }
+
   constructor(private heroService: HeroService) { }
 
   ngOnInit(): void {
     this.heroService.getAllHeroes().subscribe(heroesData => {
       this.heroes = heroesData;
     });
+  }
+
+  onSubmit() {
+    (this.heroName.name === 'Vision' ?
+      alert('You find the killer!!!')
+    :
+      alert(`${this.heroName.name} is not a killer.`)
+    )
+    this.heroName.name = ''
   }
 
 }

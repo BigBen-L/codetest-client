@@ -12,5 +12,10 @@
       </a>
     </li>
   </ul>
+  <div class = 'killer'>
+    <h3 class = 'killer__head'>Guess, who is killer</h3>
+    <input type="text" [(ngModel)]="heroName.name" class="killer__name"/>
+    <button (click)='onSubmit()' class="btn btn-sm btn-outline-primary">Check the result</button>
+  </div>
 </div>
 
